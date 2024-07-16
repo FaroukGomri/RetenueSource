@@ -31,11 +31,11 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btExport = new DevExpress.XtraEditors.SimpleButton();
             this.btModify = new DevExpress.XtraEditors.SimpleButton();
             this.btRemove = new DevExpress.XtraEditors.SimpleButton();
             this.btAdd = new DevExpress.XtraEditors.SimpleButton();
             this.btClose = new DevExpress.XtraEditors.SimpleButton();
-            this.btExport = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +69,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(722, 54);
             this.panel2.TabIndex = 2;
+            // 
+            // btExport
+            // 
+            this.btExport.Location = new System.Drawing.Point(231, 11);
+            this.btExport.Name = "btExport";
+            this.btExport.Size = new System.Drawing.Size(91, 31);
+            this.btExport.TabIndex = 7;
+            this.btExport.Text = "Export";
+            this.btExport.Click += new System.EventHandler(this.btExport_Click);
             // 
             // btModify
             // 
@@ -106,15 +115,6 @@
             this.btClose.Text = "Close";
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
-            // btExport
-            // 
-            this.btExport.Location = new System.Drawing.Point(231, 11);
-            this.btExport.Name = "btExport";
-            this.btExport.Size = new System.Drawing.Size(91, 31);
-            this.btExport.TabIndex = 7;
-            this.btExport.Text = "Export";
-            this.btExport.Click += new System.EventHandler(this.btExport_Click);
-            // 
             // frmListLigne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +124,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "frmListLigne";
             this.Text = "frmListLigne";
+            this.Load += new System.EventHandler(this.frmListLigne_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.panel2.ResumeLayout(false);

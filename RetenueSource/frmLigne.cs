@@ -170,7 +170,7 @@ namespace RetenueSource
             }
             else
             {
-                _ligne.Ref_certif_chez_declarant = etIdTypeOperation.Text;
+                _ligne.IdTypeOperation = etIdTypeOperation.Text;
             }
             _ligne.AnneeFacturation = (int)nAnneeFact.Value;
             _ligne.MontantHT = nHT.Value;

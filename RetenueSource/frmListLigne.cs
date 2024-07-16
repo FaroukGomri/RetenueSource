@@ -130,5 +130,12 @@ namespace RetenueSource
             }
         }
 
+        private void frmListLigne_Load(object sender, EventArgs e)
+        {
+            foreach (DevExpress.XtraGrid.Columns.GridColumn column in gridView2.Columns)
+            {
+                column.MinWidth = 100;
+            }
+        }
     }
 }
