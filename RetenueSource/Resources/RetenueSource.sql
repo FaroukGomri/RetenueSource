@@ -22,7 +22,7 @@ CREATE TABLE F_Beneficiere (
 
 CREATE TABLE F_LigneRetenueSource (
 	id INT NOT NULL IDENTITY(1,1),
-	id_EnteteRetenueSource INT,
+	EnteteRetenueSourceId INT,
 	TypeIdentifiant INT CHECK (TypeIdentifiant IN (1,2,3,4,5)),
 	Identifiant VARCHAR(20),
 	CategorieContribuable VARCHAR(2) CHECK (CategorieContribuable IN ('PP','PM')),
